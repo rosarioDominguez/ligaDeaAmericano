@@ -7,22 +7,22 @@
 
 package DAO;
 
-import modelo.Persona;
-import modelo.PersonaKey;
+import modelo.Delegacion;
+import modelo.DelegacionKey;
 import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * This interface provides methods to populate DB Table of Persona
+ * This interface provides methods to populate DB Table of Delegacion
  */
-public interface PersonaDAO {
+public interface DelegacionDAO {
     /**
      * Create a new record in Database.
      * @param bean   The Object to be inserted.
      * @param conn   JDBC Connection.
      * @exception    SQLException if something is wrong.
      */
-    public void create(Persona bean, Connection conn) throws SQLException;
+    public void create(Delegacion bean, Connection conn) throws SQLException;
 
     /**
      * Retrive a record from Database.
@@ -30,7 +30,7 @@ public interface PersonaDAO {
      * @param conn      JDBC Connection.
      * @exception       SQLException if something is wrong.
      */
-    public Persona load(PersonaKey key, Connection conn) throws SQLException;
+    public Delegacion load(DelegacionKey key, Connection conn) throws SQLException;
 
     /**
      * Update a record in Database.
@@ -38,7 +38,7 @@ public interface PersonaDAO {
      * @param conn   JDBC Connection.
      * @exception    SQLException if something is wrong.
      */
-    public void update(Persona bean, Connection conn) throws SQLException;
+    public void update(Delegacion bean, Connection conn) throws SQLException;
 
     /**
      * Create a new record in Database.
@@ -46,5 +46,5 @@ public interface PersonaDAO {
      * @param conn   JDBC Connection.
      * @exception    SQLException if something is wrong.
      */
-    public void delete(PersonaKey key, Connection conn) throws SQLException;
+    public void delete(DelegacionKey key, Connection conn) throws SQLException;
 }
